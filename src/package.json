@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node server to unity3d",
+  "main": "NodeServer.js",
+  "scripts": {
+    "test": "command null"
+  },
+  "dependencies": {
+    "cors": "^2.8.3",
+    "date-utils": "^1.2.21",
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.4",
+    "silly-datetime": "^0.1.0",
+    "socket.io": "^1.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "unity3dNode"
+  ],
+  "author": "zouhunter",
+  "license": "ISC"
+}

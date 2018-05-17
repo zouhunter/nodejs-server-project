@@ -1,0 +1,4 @@
+﻿{
+  "db_path" : "mongodb://localhost:27017/database",
+  "port" : 800
+}

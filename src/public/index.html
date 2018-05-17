@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>索引页面（可测试websocket连接状态）</h1>
+	<input type="button" value="Send(test)" id="btn"/>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io();
+
+		//点击按钮之后，发出提问
+		document.getElementById("btn").onclick = function(){
+			socket.emit("test_send","我是客户端信息");
+		}
+
+		socket.on("test_receive",function(msg){
+            alert(msg);
+            console.log(msg);
+		});
+
+	</script>
+</body>
+</html>
